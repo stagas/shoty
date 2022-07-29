@@ -6,47 +6,33 @@ import { takeCliScreenshot } from './take-cli-screenshot'
 import { takeScreenshot } from './take-screenshot'
 
 export class Options {
-  @arg('[file]', 'File to screenshot (.js, .jsx, .ts, .tsx)')
-  file?: string = ''
+  @arg('[file]', 'File to screenshot (.js, .jsx, .ts, .tsx)') file?: string = ''
 
-  @arg('--', '[command with args]', 'Command to execute and screenshot its output')
-  command?: string[] = []
+  @arg('--', '[command with args]', 'Command to execute and screenshot its output') command?: string[] = []
 
-  @arg('-o', '--outfile', 'Output filename (defaults to same as file with .png or .webp)')
-  outfile?: string = ''
+  @arg('-o', '--outfile', 'Output filename (defaults to same as file with .png or .webp)') outfile?: string = ''
 
-  @arg('-s', '--selector', 'Element selector')
-  selector = '#demo'
+  @arg('-s', '--selector', 'Element selector') selector = '#demo'
 
-  @arg('-d', '--delay', 'Delay in seconds after which to take screenshot')
-  delay = 0
+  @arg('-d', '--delay', 'Delay in seconds after which to take screenshot') delay = 0
 
-  @arg('-l', '--length', 'Length in seconds for video screenshots')
-  length = 1
+  @arg('-l', '--length', 'Length in seconds for video screenshots') length = 1
 
-  @arg('-w', '--width', 'Viewport width')
-  width = 800
+  @arg('-w', '--width', 'Viewport width') width = 800
 
-  @arg('-h', '--height', 'Viewport height')
-  height = 600
+  @arg('-h', '--height', 'Viewport height') height = 600
 
-  @arg('-p', '--pixel-ratio', 'Device pixel ratio')
-  pixelRatio = 2
+  @arg('-p', '--pixel-ratio', 'Device pixel ratio') pixelRatio = 2
 
-  @arg('--font-family', 'Font family')
-  fontFamily = 'Ubuntu Mono'
+  @arg('--font-family', 'Font family') fontFamily = 'Ubuntu Mono'
 
-  @arg('--font-size', 'Font size')
-  fontSize = 14
+  @arg('--font-size', 'Font size') fontSize = 14
 
-  @arg('--line-height', 'Line height')
-  lineHeight = 1.1
+  @arg('--line-height', 'Line height') lineHeight = 1.1
 
-  @arg('--root', 'Root directory to serve files from')
-  root = '.'
+  @arg('--root', 'Root directory to serve files from') root = '.'
 
-  @arg('--https', 'Use https')
-  https = false
+  @arg('--https', 'Use https') https = false
 
   constructor(options: Partial<Options> = {}) {
     Object.assign(this, options)
