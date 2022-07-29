@@ -5,7 +5,6 @@
   "description": "animated and static element screenshots",
   "version": "0.0.1",
   "license": "MIT",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://git@github.com:stagas/shoty.git"
