@@ -3,7 +3,7 @@
   "author": "stagas",
   "short": "stagas/shoty",
   "description": "animated and static element screenshots",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -77,7 +77,7 @@
     "swcno": "0.1.1",
     "typescript": "4.7.3",
     "utr": "^0.2.0",
-    "vite-open": "^3.0.1"
+    "vite-open": "^3.0.2"
   },
   "dependencies": {
     "@stagas/terminal-screenshot": "^1.0.1",
@@ -86,6 +86,6 @@
     "puppeteer": "13.5.2",
     "puppeteer-pretty-console": "^1.0.1",
     "vite": "2.9.12",
-    "vite-open": "file:../vite-open"
+    "vite-open": "^3.0.2"
   }
 }
