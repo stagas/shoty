@@ -76,7 +76,7 @@ export const takeScreenshot = async (
     errorPromise,
     (async () => {
       const page = await browser.newPage()
-      pretty(page)
+      pretty(page as any)
       page.on('error', errorHook)
       page.on('pageerror', errorHook)
       page.on('requestfailed', (req: puppeteer.HTTPRequest) => {

@@ -1,3 +1,3 @@
 /* ambient types like: */
 
-declare module 'timecut'
+declare module '@stagas/timecut'

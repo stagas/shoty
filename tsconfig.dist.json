@@ -13,7 +13,11 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "types": [
-      "./types/modules"
+      "./types/globals",
+      "./types/modules",
+      "audioworklet",
+      "node",
+      "webmidi"
     ]
   }
 }

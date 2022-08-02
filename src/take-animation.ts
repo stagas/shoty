@@ -1,6 +1,6 @@
+import timecut from '@stagas/timecut'
 import * as path from 'path'
 import puppeteer from 'puppeteer'
-import timecut from 'timecut'
 import { mergeConfig } from 'vite'
 import { open, Options as ViteOpenOptions } from 'vite-open'
 
